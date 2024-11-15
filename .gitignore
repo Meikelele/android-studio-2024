@@ -13,3 +13,24 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Ignoruj pliki systemowe
+.DS_Store
+.localized
+Thumbs.db
+desktop.ini
+
+# Ignoruj kosz Windows ($RECYCLE.BIN)
+$RECYCLE.BIN/
+
+# Ignoruj niestandardowe foldery i pliki
+/DND/
+/Gry/
+/JavaBak/
+/Ksiazki/
+/wannabeapp/
+/normanlnie_AI/
+/mr_wallpaper.jpeg
+/wall-peaky.jpg
+~$FuelPal_Sprinty.docx
+

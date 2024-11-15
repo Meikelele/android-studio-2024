@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Second Approach</string>
+
+    <!-- MainActivity    -->
+    <string name="editText">Enter some text here</string>
+    <string name="startNewActivityButton">Save</string>
+    <string name="textView">Hello Spooky World!</string>
+    <string name="textViewOutline">Hello Spooky World!</string>
+
+    <!-- SecondActivity    -->
+    <string name="f1Btn">Yennefer from Vengerberg</string>
+    <string name="f2Btn">Cirilla from Cintra</string>
+</resources>

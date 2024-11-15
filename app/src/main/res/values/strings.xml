@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">drugie_podejscie</string>
+    <string name="app_name">Drugie Podejscie</string>
+
+    <!-- MainActivity    -->
+    <string name="editText">Wprowadz jakis tekst...</string>
+    <string name="startNewActivityButton">Zapisz</string>
+    <string name="textView">Witaj Straszny Swiecie!</string>
+    <string name="textViewOutline">Witaj Straszny Swiecie!</string>
+
+    <!-- SecondActivity    -->
+    <string name="f1Btn">Yennefer z Vengerbergu</string>
+    <string name="f2Btn">Cirilla z Cintry</string>
 </resources>
