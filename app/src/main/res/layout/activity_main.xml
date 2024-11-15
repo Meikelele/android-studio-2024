@@ -1,0 +1,53 @@
+<!-- res/layout/activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/halloween_bg"
+        android:alpha="0.8"
+
+
+        >
+    </LinearLayout>
+
+    <!--OUTLINE-->
+    <TextView
+        android:id="@+id/textViewOutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Hello Spooky World!"
+        android:textSize="33sp"
+        android:textColor="@android:color/black"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="10"
+        android:shadowDy="2"
+        android:shadowRadius="2" />
+
+    <!-- MAIN STRING   -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Hello Spooky World!"
+        android:textSize="33sp"
+        android:textColor="@android:color/white"/>
+
+    <!-- IMAGE   -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="368dp"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="140dp"
+        android:adjustViewBounds="false"
+        android:src="@drawable/gar" />
+
+</RelativeLayout>
