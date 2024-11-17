@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/halloween_bg"
+        android:alpha="0.8">
+    </LinearLayout>
+
+
+
+    <!-- SAVE DATA button   -->
+    <Button
+        android:id="@+id/dupdup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/orange"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="Go To List Activity"/>
+
+    <Button
+        android:id="@+id/dupdup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/orange"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="Get Counter From Bind Service"
+        android:layout_below="@id/dupdup"/>
+
+</RelativeLayout>

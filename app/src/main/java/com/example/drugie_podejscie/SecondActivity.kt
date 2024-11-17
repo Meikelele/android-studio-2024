@@ -1,5 +1,6 @@
 package com.example.drugie_podejscie
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -20,6 +21,14 @@ class SecondActivity : AppCompatActivity() {
         // buttons for loading fragments
         val f1Btn = findViewById<Button>(R.id.f1Btn)
         val f2Btn = findViewById<Button>(R.id.f2Btn)
+
+        val btn = findViewById<Button>(R.id.goToThirdActivity)
+
+        btn.setOnClickListener() {
+            // Przejście do nowej aktywności
+            val event = Intent(this, ThirdActivity::class.java)
+            startActivity(event)
+        }
 
         f1Btn.setOnClickListener {
             replaceFragment(FirstFragment())
