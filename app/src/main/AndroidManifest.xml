@@ -34,5 +34,8 @@
 
         <activity android:name=".SecondActivity"/>
         <activity android:name=".ThirdActivity"/>
+
+        <service android:name=".BoundService" />
+
     </application>
 </manifest>
