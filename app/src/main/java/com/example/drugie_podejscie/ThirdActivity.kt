@@ -7,6 +7,7 @@ import android.content.ServiceConnection
 import android.os.Bundle
 import android.os.IBinder
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class ThirdActivity : AppCompatActivity() {
@@ -25,6 +26,31 @@ class ThirdActivity : AppCompatActivity() {
 
         val btn1 = findViewById<Button>(R.id.dupdup)
         val btn2 = findViewById<Button>(R.id.dupdup2)
+
+        // e ) wyswtietlanie countera
+        btn2.setOnClickListener {
+            if (isBound) {
+                val counterValue = boundService?.getCounter() ?: 0
+                Toast.makeText(this, "$counterValue", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Service is not bound", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        btn1.setOnClickListener {
+            if (isBound) {
+                // e ) odlaczenie uslui
+                unbindService(serviceConnection)
+
+                // e ) Zatrzymanie usługi
+                stopService(Intent(this, BoundService::class.java))
+            }
+            isBound = false
+
+            // e ) Przejście do nowej aktywność poprzez ListActivity
+            val event = Intent(this, FourthActivity::class.java)
+            startActivity(event)
+        }
     }
 
     // a) Połączenie z usługą
@@ -34,7 +60,6 @@ class ThirdActivity : AppCompatActivity() {
             boundService = binder.getService()
             isBound = true
         }
-
         override fun onServiceDisconnected(name: ComponentName?) {
             isBound = false
         }
