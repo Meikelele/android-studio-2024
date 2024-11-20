@@ -21,9 +21,44 @@ class BoundService : Service() {
         fun getService(): BoundService = this@BoundService
     }
 
+    override fun onCreate() {
+        super.onCreate()
+        // b) Uruchamianie osobnego wątku
+        handlerThread = HandlerThread("BoundServiceThread")
+        handlerThread.start()
+        handler = Handler(handlerThread.looper)
+    }
+
     override fun onBind(intent: Intent?): IBinder {
         // a) Wyświetl monit przy uruchomieniu usługi
-        Toast.makeText(this, "Your bound service has been started ^^,", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Your bound service has been started", Toast.LENGTH_SHORT).show()
+        // b) Dodaj zadania do wykonania w tle
+        startBackgroundTask()
         return binder
+    }
+
+    private fun startBackgroundTask() {
+        // zadanie w tle
+        handler.post {
+            while (true) {
+                // wyswietlanie toasta co 5sekund
+                Thread.sleep(5000)
+
+                // przeniesienie wyników osobnego wątku do głównego za pomocą toasta
+                runOnUiThread {
+                    Toast.makeText(this, "Your bound service is still working", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        // Zatrzymanie wątku gdy usluga ostaje zniszczona
+        handlerThread.quitSafely()
+    }
+
+    private fun runOnUiThread(task: () -> Unit) {
+        Handler(mainLooper).post(task)
     }
 }

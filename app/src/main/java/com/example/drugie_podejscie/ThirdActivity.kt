@@ -14,19 +14,6 @@ class ThirdActivity : AppCompatActivity() {
     private var boundService: BoundService? = null
     private var isBound = false
 
-    // Połączenie z usługą
-    private val serviceConnection = object : ServiceConnection {
-        override fun onServiceConnected(name: ComponentName?, service: IBinder?) {
-            val binder = service as BoundService.LocalBinder
-            boundService = binder.getService()
-            isBound = true
-        }
-
-        override fun onServiceDisconnected(name: ComponentName?) {
-            isBound = false
-        }
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
@@ -38,6 +25,19 @@ class ThirdActivity : AppCompatActivity() {
 
         val btn1 = findViewById<Button>(R.id.dupdup)
         val btn2 = findViewById<Button>(R.id.dupdup2)
+    }
+
+    // a) Połączenie z usługą
+    private val serviceConnection = object : ServiceConnection {
+        override fun onServiceConnected(name: ComponentName?, service: IBinder?) {
+            val binder = service as BoundService.LocalBinder
+            boundService = binder.getService()
+            isBound = true
+        }
+
+        override fun onServiceDisconnected(name: ComponentName?) {
+            isBound = false
+        }
     }
 
     override fun onDestroy() {
