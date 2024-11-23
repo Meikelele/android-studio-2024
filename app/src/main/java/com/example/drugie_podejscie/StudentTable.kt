@@ -5,22 +5,22 @@ import android.provider.BaseColumns
 // object - singleton - tylko jedna instancja
 object StudentTable : BaseColumns {
     // Nazwa tabeli
-    private const val TABLE_NAME = "students"
+    const val TABLE_NAME = "students"
 
     // Kolumna ID (Primary Key)
-    private const val COLUMN_ID = "id"
+    const val COLUMN_ID = "id"
 
     // Kolumna na imię
-    private const val COLUMN_NAME = "name"
+    const val COLUMN_NAME = "name"
 
     // Kolumna na nazwisko
-    private const val COLUMN_SURNAME = "surname"
+    const val COLUMN_SURNAME = "surname"
 
     // Kolumna na uniwersytet
-    private const val COLUMN_UNIVERSITY = "university"
+    const val COLUMN_UNIVERSITY = "university"
 
     // Kolumna na wiek
-    private const val COLUMN_AGE = "age"
+    const val COLUMN_AGE = "age"
 
     // Komenda SQL do stworzenia tabeli
     const val SQL_CREATE_TABLE = """
