@@ -8,16 +8,60 @@
         android:alpha="0.8">
     </LinearLayout>
 
-    <Button
-        android:id="@+id/lel"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/buttons"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:layout_centerHorizontal="true"
-        android:background="@color/orange"
-        android:fontFamily="sans-serif-black"
-        android:textColor="@color/black"
-        android:layout_marginTop="30dp"
-        android:padding="10dp"
-        android:text="BUTTON 1"/>
+        android:padding="30dp">
+
+        <!-- ADD SAMPLE STUDENT    -->
+        <Button
+            android:id="@+id/addSampleStudent"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+
+            android:padding="10dp"
+            android:text="+ Add Sample Student" />
+
+        <!-- ADD STUDENT    -->
+        <Button
+            android:id="@+id/addStudent"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:text="+ Add Student"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List of Students"
+        android:layout_below="@id/buttons"
+        android:textColor="@color/orange"
+        android:textSize="31sp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="100" />
+
+
+
+
 
 </RelativeLayout>
