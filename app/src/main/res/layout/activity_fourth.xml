@@ -26,7 +26,6 @@
             android:background="@color/orange"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/black"
-
             android:padding="10dp"
             android:text="+ Add Sample Student" />
 
@@ -41,15 +40,17 @@
             android:textColor="@color/black"
             android:layout_marginLeft="10dp"
             android:padding="10dp"
-            android:text="+ Add Student"/>
+            android:text="@string/addStudent"/>
 
     </LinearLayout>
 
+    <!-- HEADER - ListOfStudent    -->
     <TextView
         android:id="@+id/textListOfStudents"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="List of Students"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/textListOfStudents"
         android:layout_below="@id/buttons"
         android:textColor="@color/orange"
         android:textSize="31sp"
@@ -58,7 +59,7 @@
         android:shadowColor="@color/black"
         android:shadowDx="0"
         android:shadowDy="0"
-        android:shadowRadius="100" />
+        android:shadowRadius="9" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewStudents"

@@ -24,8 +24,8 @@ class ThirdActivity : AppCompatActivity() {
             bindService(intent, serviceConnection, Context.BIND_AUTO_CREATE)
         }
 
-        val btn1 = findViewById<Button>(R.id.dupdup)
-        val btn2 = findViewById<Button>(R.id.dupdup2)
+        val btn1 = findViewById<Button>(R.id.goToListActivity)
+        val btn2 = findViewById<Button>(R.id.getCounterFromBindService)
 
         // e ) wyswtietlanie countera
         btn2.setOnClickListener {
@@ -33,7 +33,7 @@ class ThirdActivity : AppCompatActivity() {
                 val counterValue = boundService?.getCounter() ?: 0
                 Toast.makeText(this, "$counterValue", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(this, "Service is not bound", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Service is not bound -_-", Toast.LENGTH_SHORT).show()
             }
         }
 

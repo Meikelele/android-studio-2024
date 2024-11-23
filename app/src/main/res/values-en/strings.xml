@@ -10,4 +10,18 @@
     <!-- SecondActivity    -->
     <string name="f1Btn">Yennefer from Vengerberg</string>
     <string name="f2Btn">Cirilla from Cintra</string>
+    <string name="goToThirdActivity">Go to Activity 3</string>
+    <string name="getCounterFromBindService">Get Counter From Bind Service</string>
+    <string name="goToListActivity">Go To Activity List</string>
+    <string name="textListOfStudents">List of Students</string>
+    <string name="addStudent">+ Add Student</string>
+    <string name="addSampleStudent">+ Add SAMPLE Student</string>
+    <string name="buttonEdit">EDIT</string>
+    <string name="textViewStudentUniversity">University</string>
+    <string name="textViewAge">(age)</string>
+    <string name="textViewStudentNameSurname">Name Surname</string>
+    <string name="editStudentName">Name</string>
+    <string name="editStudentSurname">Surname</string>
+    <string name="editStudentUniversity">University</string>
+    <string name="editStudentAge">Age</string>
 </resources>

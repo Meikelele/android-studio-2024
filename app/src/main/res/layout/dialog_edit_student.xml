@@ -8,24 +8,24 @@
         android:id="@+id/editStudentName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Imię studenta" />
+        android:hint="@string/editStudentName" />
 
     <EditText
         android:id="@+id/editStudentSurname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nazwisko studenta" />
+        android:hint="@string/editStudentSurname" />
 
     <EditText
         android:id="@+id/editStudentUniversity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Uniwersytet" />
+        android:hint="@string/editStudentUniversity" />
 
     <EditText
         android:id="@+id/editStudentAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Wiek studenta"
+        android:hint="@string/editStudentAge"
         android:inputType="number" />
 </LinearLayout>

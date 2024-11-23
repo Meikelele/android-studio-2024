@@ -10,4 +10,29 @@
     <!-- SecondActivity    -->
     <string name="f1Btn">Yennefer z Vengerbergu</string>
     <string name="f2Btn">Cirilla z Cintry</string>
+
+        <!-- SecondActivity - fragments    -->
+        <string name="goToThirdActivity">Do Aktywnosci 3</string>
+
+    <!-- ThirdActivity    -->
+    <string name="getCounterFromBindService">Pobierz Licznik z Bind Service</string>
+    <string name="goToListActivity">Do Listy Aktywnośći</string>
+
+    <!-- FourthActivity    -->
+    <string name="textListOfStudents">Lista Studentów</string>
+    <string name="addStudent">+ Dodaj Studenta</string>
+    <string name="addSampleStudent">+ Dodaj SAMPLE Studenta</string>
+
+        <!-- FourthActivity - item_student    -->
+        <string name="buttonEdit">Edycja</string>
+        <string name="textViewStudentUniversity">Uniwersytet</string>
+        <string name="textViewAge">(wiek)</string>
+        <string name="textViewStudentNameSurname">Imie Nazwisko</string>
+
+        <!-- FourthActivity - dialog_edit_student    -->
+        <string name="editStudentName">Imię studenta</string>
+        <string name="editStudentSurname">Nazwisko studenta</string>
+        <string name="editStudentUniversity">Uniwersytet</string>
+        <string name="editStudentAge">Wiek studenta</string>
+
 </resources>
