@@ -46,7 +46,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textViewTitle"
+        android:id="@+id/textListOfStudents"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="List of Students"
@@ -59,6 +59,15 @@
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="100" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewStudents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textListOfStudents"
+        android:padding="16dp"
+        android:layout_marginTop="10dp" />
+
 
 
 
