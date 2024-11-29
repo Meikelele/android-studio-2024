@@ -45,12 +45,22 @@
         android:background="@color/orange2"
         android:textColor="@color/black"
         android:text="@string/f2Btn" />
-
+    <Button
+        android:id="@+id/removeFragmentBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/f2Btn"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/red"
+        android:textColor="@color/black"
+        android:text="@string/removeFragment" />
     <Button
         android:id="@+id/goToThirdActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/f2Btn"
+        android:layout_below="@id/removeFragmentBtn"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
