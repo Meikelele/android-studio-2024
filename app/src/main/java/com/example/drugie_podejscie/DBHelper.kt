@@ -4,6 +4,10 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
+// polaczenie z baza danych
+// tworzenie tabel podczas pierwszego uruchomienia
+// aktualizacja bazy danych
+// umozlwiienie dostepu do oeiktow bazyd anych
 class DBHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
 
     companion object {

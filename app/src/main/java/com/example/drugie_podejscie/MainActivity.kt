@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 Toast.makeText(this, "Uprawnienia przyznane ^^,", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(this, "Uprawnienia nie zostały przyznane -_-", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Uprawnienia nie zostały przyznane T_T", Toast.LENGTH_SHORT).show()
             }
         }
     }

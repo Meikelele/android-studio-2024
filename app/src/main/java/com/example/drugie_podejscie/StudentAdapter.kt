@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 class StudentAdapter(
     private val students: MutableList<Student>,
-    private val onDeleteStudent: (Student) -> Unit, // Funkcja do usuwania
-    private val onEditStudent: (Student) -> Unit    // Funkcja do edycji
+    private val onDeleteStudent: (Student) -> Unit,
+    private val onEditStudent: (Student) -> Unit
 ) : RecyclerView.Adapter<StudentAdapter.StudentViewHolder>() {
 
     class StudentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

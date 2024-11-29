@@ -13,10 +13,8 @@ class SmsReceiver : BroadcastReceiver() {
     // context - dostep do Toast
     // intent - szczegoly SMS
     override fun onReceive(context: Context, intent: Intent) {
-
         // sprawdzenie czy doebrany sms
         if (intent.action == "android.provider.Telephony.SMS_RECEIVED") {
-
             // pobieranie wiadomosci SMS
             val bundle = intent.extras
             if (bundle != null) {

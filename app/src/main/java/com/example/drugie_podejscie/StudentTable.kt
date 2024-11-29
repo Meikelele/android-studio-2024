@@ -3,6 +3,7 @@ package com.example.drugie_podejscie
 import android.provider.BaseColumns
 
 // object - singleton - tylko jedna instancja
+// definiowanie nazw tabeli, kolumn, stałych ulatwiajacych odwolywanie do SQL
 object StudentTable : BaseColumns {
     // Nazwa tabeli
     const val TABLE_NAME = "students"

@@ -5,6 +5,7 @@ import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 
+// wykonywanie operacji na tabeli w bazie danych CRUD
 class StudentDao(context: Context) {
 
     private val dbHelper = DBHelper(context)
