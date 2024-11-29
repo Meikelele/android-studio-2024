@@ -36,24 +36,12 @@
         android:textSize="33sp"
         android:textColor="@android:color/white"/>
 
-    <!-- EDIT TEXT -->
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textView"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:hint="@string/editText"
-        android:inputType="text"/>
-
-    <!-- SAVE DATA button   -->
+    <!-- NEXT ACTIVITY button   -->
     <Button
         android:id="@+id/startNewActivityButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editText"
+        android:layout_below="@id/barWithStrings"
         android:layout_centerHorizontal="true"
         android:background="@color/orange"
         android:fontFamily="sans-serif-black"
@@ -62,4 +50,37 @@
         android:padding="10dp"
         android:text="@string/startNewActivityButton" />
 
+<LinearLayout
+    android:id="@+id/barWithStrings"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_below="@id/textView"
+    >
+
+    <!-- POLSIH VERSION   -->
+    <Button
+        android:id="@+id/buttonPolish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="@string/buttonPolish" />
+
+    <!-- ENGLISH VERSION   -->
+    <Button
+        android:id="@+id/buttonEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="@string/buttonEnglish"
+        android:layout_marginStart="10dp"/>
+</LinearLayout>
 </RelativeLayout>

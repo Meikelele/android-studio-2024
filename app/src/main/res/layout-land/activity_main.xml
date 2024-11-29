@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/halloween_bg"
+        android:alpha="0.8">
+    </LinearLayout>
+
+    <!-- Outline TextView -->
+    <TextView
+        android:id="@+id/textViewOutline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/textViewOutline"
+        android:textSize="33sp"
+        android:textColor="@android:color/black"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="10"
+        android:shadowDy="2"
+        android:shadowRadius="2" />
+
+    <!-- Main TextView -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/textView"
+        android:textSize="33sp"
+        android:textColor="@android:color/white" />
+
+    <!-- Bar with Language Buttons -->
+    <LinearLayout
+        android:id="@+id/barWithStrings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <!-- Polish Version Button -->
+        <Button
+            android:id="@+id/buttonPolish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:text="@string/buttonPolish" />
+
+        <!-- English Version Button -->
+        <Button
+            android:id="@+id/buttonEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/buttonEnglish" />
+    </LinearLayout>
+
+    <!-- Next Activity Button -->
+    <Button
+        android:id="@+id/startNewActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/barWithStrings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/orange"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:text="@string/startNewActivityButton" />
+</RelativeLayout>

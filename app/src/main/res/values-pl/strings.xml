@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Drugie Podejście</string>
+
+    <!-- MainActivity    -->
+    <string name="editText">Wprowadź tekst tutaj...</string>
+    <string name="startNewActivityButton">Następna Aktywność</string>
+    <string name="textView">Witaj Straszny Świecie</string>
+    <string name="textViewOutline">Witaj Straszny Świecie</string>
+
+    <!-- SecondActivity    -->
+    <string name="f1Btn">Fragment no. 1</string>
+    <string name="f2Btn">Fragment no. 2</string>
+    <string name="goToThirdActivity">Do Aktywnosci 3</string>
+    <string name="getCounterFromBindService">Pokaż Counter z BoundService</string>
+    <string name="goToListActivity">Idź do listy aktywności</string>
+</resources>
