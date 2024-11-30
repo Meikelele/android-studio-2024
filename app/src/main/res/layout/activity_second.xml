@@ -57,15 +57,15 @@
         android:textColor="@color/black"
         android:text="@string/removeFragment" />
     <Button
-        android:id="@+id/goToThirdActivity"
+        android:id="@+id/addFragmentBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/removeFragmentBtn"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@color/orange"
+        android:background="@color/green"
         android:textColor="@color/black"
-        android:text="@string/goToThirdActivity" />
+        android:text="Add Fragment" />
 
 </RelativeLayout>
