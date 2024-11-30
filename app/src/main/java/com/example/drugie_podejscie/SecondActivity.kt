@@ -19,12 +19,12 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        // Load the first fragment by default
+        // Pierwszy fragment wysweitla sie domyslnie
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragmentContainer, FirstFragment())
             .commit()
 
-        // Buttons for loading and managing fragments
+        // Przyciski do ladowania fragmentow i nie tylko
         val f1Btn = findViewById<Button>(R.id.f1Btn)
         val f2Btn = findViewById<Button>(R.id.f2Btn)
         val removeFragmentBtn = findViewById<Button>(R.id.removeFragmentBtn)
@@ -76,7 +76,6 @@ class SecondActivity : AppCompatActivity() {
                 .remove(fragment)
                 .commit()
 
-            // Update fragment removal state
             when (fragment) {
                 is FirstFragment -> isFirstFragmentRemoved = true
                 is SecondFragment -> isSecondFragmentRemoved = true
@@ -86,7 +85,6 @@ class SecondActivity : AppCompatActivity() {
     }
 
     private fun clearFrame() {
-        // Wyświetlenie pustego widoku
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragmentContainer, Fragment())
             .commit()

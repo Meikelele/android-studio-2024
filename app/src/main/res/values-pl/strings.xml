@@ -6,14 +6,12 @@
     <string name="startNewActivityButton">Następna Aktywność</string>
     <string name="textView">Witaj Straszny Świecie</string>
     <string name="textViewOutline">Witaj Straszny Świecie</string>
-
-    <!-- SecondActivity    -->
     <string name="buttonPolish">Polski</string>
     <string name="buttonEnglish">Angielski</string>
+
+    <!-- SecondActivity    -->
     <string name="f1Btn">Fragment no. 1</string>
     <string name="f2Btn">Fragment no. 2</string>
-    <string name="goToThirdActivity">Do Aktywnosci 3</string>
-    <string name="getCounterFromBindService">Pokaż Counter z BoundService</string>
-    <string name="goToListActivity">Idź do listy aktywności</string>
     <string name="removeFragment">Usuń Aktualny Fragment</string>
+    <string name="addFragment">Dodaj Fragment</string>
 </resources>

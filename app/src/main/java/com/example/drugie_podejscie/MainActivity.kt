@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         val btnPolish = findViewById<Button>(R.id.buttonPolish)
         val btnEnglish = findViewById<Button>(R.id.buttonEnglish)
 
-        // Przejście do nowej aktywności
+        // Do nowej aktywności
         btnStartNewActivity.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)

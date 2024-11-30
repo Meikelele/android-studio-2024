@@ -12,10 +12,7 @@
     <!-- SecondActivity    -->
     <string name="f1Btn">Yennefer from Vengerberg</string>
     <string name="f2Btn">Cirilla from Cintra</string>
-    <string name="goToThirdActivity">Go to Activity 3</string>
-    <string name="getCounterFromBindService">Get Counter From Bind Service</string>
-    <string name="goToListActivity">Go To Activity List</string>
     <string name="removeFragment">Delete Current Fragment</string>
-
+    <string name="addFragment">Add Fragment</string>
 
 </resources>

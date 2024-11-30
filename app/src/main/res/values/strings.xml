@@ -12,14 +12,8 @@
     <!-- SecondActivity    -->
     <string name="f1Btn">Yennefer z Vengerbergu</string>
     <string name="f2Btn">Cirilla z Cintry</string>
-
-        <!-- SecondActivity - fragments    -->
-        <string name="goToThirdActivity">Do Aktywnosci 3</string>
-
-    <!-- ThirdActivity    -->
-    <string name="getCounterFromBindService">Pobierz Licznik z Bind Service</string>
-    <string name="goToListActivity">Do Listy Aktywnośći</string>
     <string name="removeFragment">Usuń Aktualny Fragment</string>
+    <string name="addFragment">Add Fragment</string>
 
 
 </resources>

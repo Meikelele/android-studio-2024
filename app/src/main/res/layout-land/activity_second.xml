@@ -47,15 +47,28 @@
             android:text="@string/f2Btn" />
 
         <Button
-            android:id="@+id/goToThirdActivity"
+            android:id="@+id/removeFragmentBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:background="@color/orange"
+            android:background="@color/red"
             android:textColor="@color/black"
-            android:text="@string/goToThirdActivity" />
+            android:text="@string/removeFragment" />
+
+        <Button
+            android:id="@+id/addFragmentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/green"
+            android:textColor="@color/black"
+            android:text="@string/addFragment" />
+
+
 
     </LinearLayout>
 
